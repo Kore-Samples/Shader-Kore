@@ -29,7 +29,7 @@ namespace {
 	}
 }
 
-int kore(int argc, char** argv) {
+int kickstart(int argc, char** argv) {
 	Kore::System::init("Shader", 1024, 768);
 	Kore::System::setCallback(update);
 

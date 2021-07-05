@@ -1,5 +1,3 @@
-#include "pch.h"
-
 #include <Kore/IO/FileReader.h>
 #include <Kore/Graphics4/Graphics.h>
 #include <Kore/Graphics4/PipelineState.h>

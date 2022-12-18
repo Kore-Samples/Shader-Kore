@@ -13,7 +13,7 @@ namespace {
 	Graphics4::VertexBuffer* vertices;
 	Graphics4::IndexBuffer* indices;
 
-	void update() {
+	void update(void*) {
 		Graphics4::begin();
 		Graphics4::clear(Graphics4::ClearColorFlag);
 
@@ -29,7 +29,7 @@ namespace {
 
 int kickstart(int argc, char** argv) {
 	Kore::System::init("Shader", 1024, 768);
-	Kore::System::setCallback(update);
+	Kore::System::setCallback(update, NULL);
 
 	FileReader vs("shader.vert");
 	FileReader fs("shader.frag");
